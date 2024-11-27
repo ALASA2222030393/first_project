@@ -7,354 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            gap: 0px;
-            color: black;
-            font-family: "Hubot Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: <weight>;
-            font-style: normal;
-            font-variation-settings: "wdth" 100;
-            overflow-x: hidden;
-        }
-
-        .image-container {
-            height: 786px;
-            width: 875px;
-            border-radius: 80px;
-            position: relative;
-            right: -67px;
-            overflow: hidden;
-            object-fit: cover;
-        }
-
-        .big-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 800px;
-        }
-
-        .big-container h1 {
-            font-family: "Hubot Sans", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: <weight>;
-            font-style: normal;
-        }
-
-        .fill-info {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .fill-info input {
-            width: 404px;
-            height: 32px;
-            border-radius: 15px;
-            border: 1px solid #ccc;
-            box-shadow: none; 
-            padding: 5px; 
-        }
-
-        input:focus {
-            outline: none;
-            border: 1px solid #ccc; 
-        }
-
-        .fill-info label {
-            font-size: 14px;
-        }
-
-        .fill-cont {
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-        }
-
-        .button {
-            color: white;
-            background-color: #3A5B22;
-            height: 32px;
-            border-radius: 15px;
-            border: none;
-            font-weight: bolder;
-        }
-
-        .line {
-            height: 2px;
-            background-color: #F5F5F5;
-            width: 191px;
-        }
-
-        .the-line {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-        }
-
-        .for-forgot-password {
-            display: flex; 
-            gap: 220px;
-        }
-
-        #login-methods {
-            display: flex;
-            gap: 20px;
-            flex-direction: row;
-            width: 403px;
-            height: 60px;
-        }
-
-        #login-methods > .fb, #login-methods > #googleLoginButton {
-            flex: 1;
-        }
-
-        #googleLoginButton {
-            width: 190px;
-            height: 50px;
-            border-radius: 25px;
-            overflow: hidden;
-        }
-
-        .fb {
-            width: 190px;
-            background-color: white;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 25px; 
-            overflow: hidden;
-        }
-
-        .Phone-design {
-            display: none;
-        }
-
-        @media(max-width : 500px){
-            body, html {
-                margin: 0; /* Reset margin if needed */
-                padding: 0; /* Reset padding if needed */
-                height: 1600px;
-                overflow: hidden;
-            }
-            body{
-                display: block;
-            }
-            .image-container {
-                display: none;
-            }
-            
-            .big-container {
-                display: none;
-            }
-            
-            .Phone-design {
-                display: block;
-            }
-            
-            * {
-                font-size: 30px;
-                font-family: "Hubot Sans", sans-serif;
-            }
-            
-            html, body {
-                height: 1600px;
-                overflow: hidden;
-            }
-            
-            .image-section {
-                position: relative;
-                margin-bottom: 20px;
-                width: 1000px;
-                height: 245px;
-            }
-            
-            .image {
-                width: 100%;
-                border-radius: 15px;
-                object-fit: cover;
-                height: 306px;
-                width: 186px;
-            }
-            
-            .container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .fill-info {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-                width: 309px;
-            }
-            
-            .fill-info input {
-                width: 309px;
-                border-color: black;
-                border-radius: 12px;
-                border-top: 2px solid #000;
-                border-bottom: 2px solid #000;
-                border-right: 2px solid #000;
-                text-align: center;
-                height: 48px;
-            }
-            
-            .fill-info input::placeholder {
-                text-align: center;
-            }
-            
-            .txt {
-                font-size: 35px;
-                font-weight: 700;
-            }
-            
-            .container2 {
-                position: relative;
-                left: 120px;
-            }
-            
-            .arrow {
-                width: 54px;
-                height: 48px;
-            }
-            
-            .that-Sign {
-                display: flex;
-                align-items: center;
-                gap: 20px;
-            }
-            
-            .button {
-                height: 273px;
-                width: 273px;
-                background-color: transparent;
-            }
-            
-            .button- {
-                position: relative;
-                overflow: hidden;
-                left: 150px;
-            }
-            
-            .link {
-                position: relative;
-                bottom: 197px;
-                left: 70px;
-                text-decoration: none;
-                color: white;
-                font-weight: 700;
-            }
-            
-            .image1 {
-                z-index: 1;
-                position: relative;
-                left: -32px;
-                top: -111px;
-            }
-            
-            .image2 {
-                z-index: 2;
-                position: relative;
-                left: -253px;
-                top: -93px;
-            }
-            
-            .image3 {
-                z-index: 3;
-                position: relative;
-                left: -493px;
-                top: -115px;
-            }
-            
-            .that-title {
-                font-size: 700;
-                font-family: "Hubot Sans", sans-serif;
-                position: relative;
-                right: -26px;
-            }
-        }
-
-    </style>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script>
-      // Replace this with your actual client ID
-      const CLIENT_ID = 'YOUR_GOOGLE_CLIENT_ID';
-  
-      function handleCredentialResponse(response) {
-        console.log("Encoded JWT ID token: " + response.credential);
-        // Send this token to your server for verification and further processing.
-      }
-  
-      window.onload = function () {
-        google.accounts.id.initialize({
-          client_id: CLIENT_ID,
-          callback: handleCredentialResponse,
-        });
-  
-        google.accounts.id.renderButton(
-            document.getElementById("googleLoginButton"),
-            {
-                theme: "outline",
-                size: "large",
-                shape: "pill" // يجعل الحواف دائرية تلقائيًا
-            }
-            );
-
-  
-        google.accounts.id.prompt(); // Automatically prompts the user for login
-      };
-    </script>
-    <script>
-        // إدخال Facebook SDK
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : 'YOUR_APP_ID', // ضع معرف التطبيق الخاص بك هنا
-            cookie     : true, // تمكين ملفات تعريف الارتباط
-            xfbml      : true, // معالجة الـ Social Plugins
-            version    : 'v17.0' // إصدار API
-          });
-    
-          FB.AppEvents.logPageView();   
-        };
-    
-        (function(d, s, id){
-           var js, fjs = d.getElementsByTagName(s)[0];
-           if (d.getElementById(id)) {return;}
-           js = d.createElement(s); js.id = id;
-           js.src = "https://connect.facebook.net/en_US/sdk.js";
-           fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));
-    
-        // فحص حالة تسجيل الدخول
-        function checkLoginState() {
-          FB.getLoginStatus(function(response) {
-            statusChangeCallback(response);
-          });
-        }
-    
-        // معالجة حالة تسجيل الدخول
-        function statusChangeCallback(response) {
-          if (response.status === 'connected') {
-            // المستخدم مسجّل الدخول
-            FB.api('/me', {fields: 'name,email'}, function(user) {
-              document.getElementById('status').innerHTML =
-                'مرحبًا، ' + user.name + ' (' + user.email + ')';
-            });
-          } else {
-            // المستخدم لم يسجل الدخول
-            document.getElementById('status').innerHTML = 'الرجاء تسجيل الدخول إلى Facebook.';
-          }
-        }
-      </script>
+    <link rel="stylesheet" href="SingIn.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="big-container">
@@ -385,23 +42,35 @@
                 <div class="line"></div>
             </div>
             <div id="login-methods">
-                <div id="googleLoginButton" style="overflow: hidden; border-radius: 15px;"></div>
-                <div class="fb">
-                    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+              <a href="#" class="login-link">
+                  <div class="login_with_google">
+                    <div class="google_image">
+                      <img src="images/Google_icon.png" alt="">
+                    </div>
+                    <p>login with google</p>
                 </div>
-            </div>
+              </a>
+              <a href="#" class="login-link">
+                  <div class="login_with_facebook">
+                    <div class="facebook_image">
+                      <img src="images/Facebook_icon.png" alt="">
+                    </div>
+                    <p>login with Facebook</p>
+                </div>
+              </a>
+          </div>
         </div>
         <p>Dont Have An Account <a href="#" style="text-decoration: none;">Sign Up</a></p>
 
         </div>
     </div>
     
-    <img src="images/2a98de6663e9d9584150298b5ab128ce.jpg" alt="bottle image" class="image-container">
+    <img src="images/Blue_glass.jpg" alt="bottle image" class="image-container">
     <div class="Phone-design">
         <div class="image-section">
-            <img src="images/—Pngtree—circle clipart black circle_5553148.png" alt="circle" class="image1" style="height: 189px; width: 184px;">
-            <img src="images/vecteezy_white-circle-png_21115771.png" alt="circle" class="image2" style="height: 209px; width: 202px;">
-            <img src="images/—Pngtree—circle clipart black circle_5553148.png" alt="circle" class="image3" style="height: 189px; width: 184px;">
+            <img src="images/Black_circle.png" alt="circle" class="image1" style="height: 189px; width: 184px;">
+            <img src="images/White_circle.png" alt="circle" class="image2" style="height: 209px; width: 202px;">
+            <img src="images/Black_circle.png.png" alt="circle" class="image3" style="height: 189px; width: 184px;">
         </div>
         <div class="title">
             <p class="that-title">Sign In</p>
@@ -416,11 +85,11 @@
         <div class="container2">
             <div class="that-Sign">
             <p class="txt">Sign In</p>
-            <img src="images/Screenshot 2024-11-20 at 14-49-08 Desktop sign up and login pages by EditorM (Community) – Figma.png" alt="arrow" class="arrow">
+            <img src="images/Black_arrow.png" alt="arrow" class="arrow">
             </div>
         </div>
         <div class="button-">
-            <img src="images/—Pngtree—circle clipart black circle_5553148.png" alt="button-img" class="button">
+            <img src="images/Black_circle.png" alt="button-img" class="button">
             <a href="#" class="link">Sign Sign Up</a>
         </div>
     </div>
