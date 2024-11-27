@@ -1,0 +1,279 @@
+        body {
+            margin: 0;
+            display: flex;
+            gap: 0px;
+            color: black;
+            font-family: "Poppins", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:"wdth" 100;
+            overflow-x: hidden;
+        }
+
+        .image-container {
+            height: 786px;
+            width: 875px;
+            border-radius: 80px;
+            position: relative;
+            right: -67px;
+            overflow: hidden;
+            object-fit: cover; /* سيجعل الصورة تتناسب مع الحجم المحدد */
+        }
+
+        .big-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 800px;
+        }
+
+        .big-container h1 {
+            font-family: "Hubot Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .fill-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fill-info input {
+        width: 404px;
+        height: 32px;
+        border-radius: 15px;
+        border: 1px solid #ccc;
+        box-shadow: none; 
+        padding: 5px; 
+        }
+
+
+        input:focus {
+            outline: none;
+            border: 1px solid #ccc; 
+        }
+
+        .fill-info label {
+            font-size: 14px;
+        }
+
+        .fill-cont {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .button {
+            color: white;
+            background-color: #3A5B22;
+            height: 32px;
+            border-radius: 15px;
+            border: none;
+            font-weight: bolder;
+        }
+
+        .line {
+            height: 2px;
+            background-color: #F5F5F5;
+            width: 191px;
+        }
+
+        .the-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        #login-methods {
+            display: flex;
+            gap: 20px;
+            flex-direction: row;
+            width: 403px;
+            height: 60px;
+        }
+
+        #login-methods > .fb, #login-methods > #googleLoginButton {
+            flex: 1;
+        }
+
+        #googleLoginButton {
+            width: 190px;
+            height: 50px;
+            border-radius: 25px; /* تغيير الحواف إلى دائرية أكبر */
+            overflow: hidden;
+        }
+
+        .fb {
+            width: 190px;
+            background-color: white;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25px; /* التأكد من أن الزر له حواف دائرية */
+            overflow: hidden;
+        }
+        .phone-design{
+            display: none;
+        }
+        .login_with_google {
+            width: 190px;
+            height: 33px;
+            display: flex;
+            gap: 10px;
+            border-radius: 15px;
+            border: 1.2px solid #ccc;
+            text-align: center; 
+            align-items: center; 
+            justify-content: center; 
+        }
+        
+        .google_image {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100%;
+        }
+        
+        .login_with_google img{
+            width: 18px;
+            height: 18px;
+        }
+        .login-link{
+            text-decoration: none;
+            color: black;
+        }
+        .login_with_google p{
+            width: 139.9px;
+            height: 16.8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .login_with_facebook {
+            width: 190px;
+            height: 33px;
+            display: flex;
+            gap: 10px;
+            border-radius: 15px;
+            border: 1.2px solid #ccc;
+            text-align: center; 
+            align-items: center; 
+            justify-content: center; 
+        }
+        
+        .google_image {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100%;
+        }
+        
+        .login_with_facebook img{
+            width: 18px;
+            height: 18px;
+        }
+        .login-link{
+            text-decoration: none;
+            color: black;
+        }
+        .login_with_facebook p{
+            width: 139.9px;
+            height: 16.8px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        
+        @media(max-width : 500px){
+            .big-container{
+                display: none;
+            }
+            .image-container{
+                display: none;
+            }
+            .phone-design{
+                display: block;
+            }
+            *{
+            font-size:30px ;
+            font-family: "Hubot Sans", sans-serif;
+            }
+            html, body{
+                height: 1600px;
+                overflow: hidden;
+            }
+            .image-section {
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+            .image {
+                width: 100%; /* Make the image take up 100% of its container width */
+                border-radius: 15px; /* Give the image rounded corners */
+                object-fit: cover; /* Ensure the image covers the area without distortion */
+                height: 306px;
+                width: 186px;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            .fill-info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                width: 309px;
+            }
+            .fill-info input{
+                width: 309px;
+                border-color: black;
+                border-radius: 12px;
+                border-top: 2px solid #000; /* حدد سُمك وحدود العلوية */
+                border-bottom: 2px solid #000;
+                border-right: 2px solid #000;
+                text-align: center;
+                height: 48px;
+            }
+            .fill-info input::placeholder {
+                text-align: center; /* يجعل النص داخل الـ placeholder في المنتصف */
+                height: 36px;
+            }
+            .txt{
+                font-size: 35px;
+                font-weight: 700;
+            }
+            .container2{
+                position: relative;
+                left: 120px;
+            }
+            .arrow{
+                width: 54px;
+                height: 48px;
+            }
+            .that-Sign{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+            .button{
+                height: 273px;
+                width: 273px;
+                background-color :transparent;
+            }
+            .button-{
+                position: relative;
+                overflow: hidden;
+                left: 150px;
+            }
+            .link{
+                position: relative;
+                bottom: 197px;
+                left: 70px;
+                text-decoration: none;
+                color: white;
+                font-weight: 700;
+            }
+        }
