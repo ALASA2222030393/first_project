@@ -40,11 +40,19 @@ spans.forEach(filter => filter.addEventListener("click", () => {    // filter is
 
 //remove the scroll bar from producst section : 
 
-const products = document.getElementById("products") ; 
-if(window.innerWidth >= 550){
-  products.classList.remove("has-scrollbar") ; 
-}else{
-  products.classList.add("has-scrollbar") ; 
+const products = document.getElementById("products");
+
+function toggleScrollbarClass() {
+  if (window.innerWidth >= 550) {
+    products.classList.remove("has-scrollbar");
+  } else {
+    products.classList.add("has-scrollbar");
+  }
 }
+
+toggleScrollbarClass();
+
+// Add event listener for window resize
+window.addEventListener("resize", toggleScrollbarClass);
 
 ///////////////////////////////////////////////////
